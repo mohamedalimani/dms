@@ -1,0 +1,7 @@
+<div style="margin:20px">
+    <form #f="ngForm" (ngSubmit)="onSubmit(f)" ngNativeValidate>
+    <label>type the name of the document you want to delete </label>
+    <input name="Doc" type="text" [(ngModel)]="f.Doc" required>
+    <input type="submit" />
+    </form>
+    </div>

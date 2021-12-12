@@ -1,0 +1,28 @@
+<div id="bg"><div class="addme">
+    <ul>
+        <form #f="ngForm" (ngSubmit)="onSubmit(f)" ngNativeValidate>  
+        <li>
+            <label>edit this doc *</label>
+            <input name="Doc" type="text" placeholder="document name to edit" ngModel required>
+        </li>
+        <li>
+        <label>new full name *</label>
+        <input name="FullName" type="text" [(ngModel)]="f.Doc" required>
+        </li>
+        <li>
+        <label>new description *</label>
+        <input name="Description" type="text" ngModel required>
+        </li>
+        <li>
+        <label>new date *</label>
+        <input name="Date" type="date" ngModel required>
+        </li>
+        <li>
+        <input class="btn btn-primary" type="submit"/> 
+        </li>  
+    </form>
+    </ul>
+    </div>
+    </div>
+    
+    

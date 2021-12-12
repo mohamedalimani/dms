@@ -1,0 +1,20 @@
+<button type="button" (click)="changeTheme()" class="btn btn-primary theme">change table theme</button>
+<p style="margin-left:10px;">documents</p>
+<table [ngClass]="status? 'table' : 'table table-dark'"> 
+    <tbody>
+        <tr>
+            <th>#</th>
+            <th>full document name</th>
+            <th>description</th>
+            <th>date</th>
+            <th>name</th>
+        </tr>
+     <tr *ngFor="let document of documents; let i = index">
+         <td>{{i+1}}</td>
+         <td>{{document.FullName}}</td>
+         <td>{{document.Description}}</td>
+         <td>{{document.Date}}</td>
+         <td>{{document.Doc}}</td>
+     </tr>       
+    </tbody>
+</table>
